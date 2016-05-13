@@ -4,6 +4,7 @@ module Api.Healthcheck
         , Tests
         , Healthcheck
         , getHealthcheck
+        , rollupHealthchecks
         )
 
 import Dict exposing (Dict)
@@ -65,3 +66,14 @@ getHealthcheck url =
     Http.get healthcheckDecoder url
     |> Task.map (Debug.log "Result (success)")
     |> Task.mapError (Debug.log "Result (failure)")
+
+rollupHealthchecks : Healthcheck -> TestResult
+rollupHealthchecks hc =
+    List.foldr
+        (\t s ->
+            case s of
+                Failed -> Failed
+                Passed -> t.result
+        )
+        Passed
+        (Dict.values hc.tests)

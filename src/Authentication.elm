@@ -6,6 +6,7 @@ module Authentication
         , update
         , handleAuthResult
         , tryGetUserProfile
+        , isLoggedIn
         )
 
 import Auth0
@@ -63,3 +64,9 @@ tryGetUserProfile model =
     case model.state of
         Auth0.LoggedIn user -> Just user.profile
         Auth0.LoggedOut -> Nothing
+
+isLoggedIn : Model -> Bool
+isLoggedIn model =
+    case model.state of
+        Auth0.LoggedIn _ -> True
+        Auth0.LoggedOut -> False
