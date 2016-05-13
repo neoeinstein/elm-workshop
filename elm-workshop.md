@@ -478,7 +478,7 @@ type Msg
 
 performHealthcheck : Cmd Msg
 performHealthcheck =
-    Healthcheck.getHealthcheck "http://localhost:8846/healthcheck"
+    Healthcheck.getHealthcheck "https://tst-kim.supplychain.cimpress.io/healthcheck"
     |> Task.perform
         (always ())
         (\h ->
