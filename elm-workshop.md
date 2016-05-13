@@ -1,5 +1,8 @@
 # Elm Workshop with 0.17
 
+: _You can find examples of a final state by looking at the
+  [end-of-workshop](https://mcpstash.cimpress.net/projects/MSWLSC/repos/elm-workshop/browse?at=refs%2Fheads%2Fend-of-workshop) branch_
+
 ## Hello World
 
 ### Initial start
