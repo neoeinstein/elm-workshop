@@ -1,7 +1,10 @@
 # Elm Workshop with 0.17
 
-: _You can find examples of a final state by looking at the
-  [end-of-workshop](https://mcpstash.cimpress.net/projects/MSWLSC/repos/elm-workshop/browse?at=refs%2Fheads%2Fend-of-workshop) branch_
+> _You can find examples of a final state by looking at the [end-of-workshop][] branch
+> and see the [diff with the starter branch][diff]_
+
+  [end-of-workshop]: https://mcpstash.cimpress.net/projects/MSWLSC/repos/elm-workshop/browse?at=refs%2Fheads%2Fend-of-workshop
+  [diff]: https://mcpstash.cimpress.net/projects/MSWLSC/repos/elm-workshop/compare/diff?targetBranch=refs%2Fheads%2Fmaster&sourceBranch=refs%2Fheads%2Fend-of-workshop&targetRepoId=3962
 
 ## Hello World
 
