@@ -305,6 +305,7 @@ view (Model model) =
 ```
 
 * Allow reset
+
 ```elm
 type Msg
     | Reset
@@ -326,9 +327,7 @@ update msg model =
                     | text = model.initialText
                     , validationResult = model.initialText |> model.validate
                     }
-
 ```
-
 
 * Add normalization
 
