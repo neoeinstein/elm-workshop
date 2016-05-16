@@ -6,5 +6,10 @@ import Html.App as Html
 import Time
 import Task
 
-main = Html.beginnerProgram { model = {}, view = always (text "I am empty"), update = always identity}
+main =
+    Html.beginnerProgram
+        { model = {}
+        , view = always (text "I am empty")
+        , update = always identity
+        }
 
